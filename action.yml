@@ -1,8 +1,9 @@
 # action.yml
 name: 'ServerlessCLI'
 description: 'Execute Serverless CLI commands'
-icon: zip
-color: red
+branding:
+  icon: zip
+  color: red
 inputs:
   command:
     description: 'Serverless command including arguments'
