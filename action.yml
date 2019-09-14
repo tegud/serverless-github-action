@@ -1,0 +1,12 @@
+# action.yml
+name: 'ServerlessCLI'
+description: 'Execute Serverless CLI commands'
+inputs:
+  command:
+    description: 'Serverless command including arguments'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
