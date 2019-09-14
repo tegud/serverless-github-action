@@ -2,8 +2,8 @@
 name: 'ServerlessCLI'
 description: 'Execute Serverless CLI commands'
 branding:
-  icon: zip
-  color: red
+  icon: zap
+  color: blue
 inputs:
   command:
     description: 'Serverless command including arguments'
