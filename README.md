@@ -10,11 +10,13 @@ In your workflow yml file add a step entry with:
     - name: serverless deploy
       uses: tegud/serverless-github-action@1.52.0
       with:
-        args: deploy
+        command: deploy
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 ```
+
+Where the `command` parameter is everything after `serverless`, including any arguments.
 
 You'll need to adjust for your cloud provider of choice, and ensure that your secrets are set up in the Settings/Secrets section in github.
 
