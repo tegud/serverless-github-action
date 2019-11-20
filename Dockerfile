@@ -1,6 +1,6 @@
-FROM tegud/serverless-cli:1.56.1
+FROM tegud/serverless-cli:1.58.0
 
-LABEL version="1.56.1" \
+LABEL version="1.58.0" \
       repository="https://github.com/tegud/serverless-github-action" \
       homepage="https://github.com/tegud/serverless-github-action" \
       maintainer="Steve Elliott" \
